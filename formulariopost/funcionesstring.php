@@ -39,8 +39,7 @@ echo 'Cortar texto :'.subString($texto,0,100).'...<br>'.'<br>';
 echo str_replace('PHP','Ruby',"$texto").'<br>'.'<br>';
 echo str_replace('libre','LIBRE',"$texto").'<br>'.'<br>';
 echo wordlimit($texto);
-	
-	?>	
+?>	
 </div>
 </body>
 </html>
