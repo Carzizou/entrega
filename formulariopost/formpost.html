@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html  lang="es">
+<head>
+	<meta charset='utf-8'>
+	<title>Enviar datos por url</title>
+	<meta charset="utf-8" >
+		<link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+<div class="container">
+<h2>Formulario sencillo via post</h2>
+
+<form method='post'action='procesar.php'>
+  <div class="form-group">
+    <label for="texto">Nombre de usuario</label>
+    <input name='usuario' type="text" class="form-control" id="usuario" placeholder="Introduzca usuario">
+  </div>
+  <div class="form-group">
+    <label for="nacimiento">Fecha de nacimiento</label>
+    <input  name='fecha'type="date" class="form-control" id="fecha" placeholder="Introduzca fecha de nacimiento">
+  </div>
+  <div class="form-group"><h5>Marque su sexo</h5></p>
+	<select name='sexo'>
+		<option value name='hombre'>Hombre</option>
+		<option value name='mujer'>Mujer</option>
+	</select>
+	</div>
+	Nivel de estudios:
+    <input  name='estudios'type="radio" checked="checked" value='noestudios' id="estudios" >No estudios</input>
+    <input  name='estudios'type="radio" value='primarios' id="estudios" >Primarios</input>
+    <input  name='estudios'type="radio" value='secundarios' id="estudios" >Secundarios</input>
+	<br>
+	<input  name='informacion' type="checkbox" checked="checked">No recibir información</input>
+	<br>
+	<input  name='validar' type="checkbox" >Acepto las condiciones</input>
+	<br>
+	<button type="submit" class="btn btn-default">Enviar</button>
+  </div>
+</form>
+</div>
+</body>
+</html>
